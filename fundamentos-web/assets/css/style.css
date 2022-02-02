@@ -1,0 +1,126 @@
+/* Estilos da página index.html */
+.center{
+  text-align: center;
+}
+
+.left{
+  text-align: left;
+}
+
+.margin-top01{
+  margin-top: .7rem;
+}
+
+.justifyLeft{
+  align-items: left;
+  justify-content: left;
+}
+
+/* sempre que for preciso centralizar um item como foto, vídeo etc, crie uma div e siga o conceito de um container que deve receber algo e organizar esses itens */
+.container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  /* caso queira deixar o texto do lado da imagem, apagar o wrap no flex flow, e para alinhar o texto com a imagem, use o item align center */
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+/* rem é um sistema de medida de início "responsivo" pois se baseia na 
+medida de a quantiadade de letras M maiúsculas no navegador do usuário */
+/* O text_decoration retira o underline que vem no titulo */
+.links {
+  font-size: 2rem; 
+  text-decoration: none;
+  color: #000000;
+}
+
+/* dentre uma classe declaramos o hover, que significa que quando o mouse estiver passando em cima faça o que está estipulado */
+.links:hover{
+  text-decoration: underline;
+  color: #398fb8;
+}
+
+.padding-01{
+  padding: 1rem;
+}
+
+.fs01{
+  font-size: 1.1rem;
+}
+
+.tm-social{
+  width: 50px;
+  height: 50px;
+}
+
+/* Se for preciso criar um espaçamento entre os objetos pode se usar o margin bottom */
+.mb-02{
+  margin-bottom: 2rem;
+}
+
+/* Estilos da página contato.html */
+
+/* vw é a area de visualização da viewport do navegador, logo o 50vw significa 50% da tela */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vw;
+}
+
+.campo{
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 1rem; */
+  margin: 1rem 0 1rem 0;
+  /* margin tem 4 posições, cima, direita, baixo, esquerda e sempre sera nessa ordem. quando há so dois valores será esq/dir e o segundo cima/baix e 3 valores cim, esq/dir, baixo */
+  width: 100%;
+}
+
+.campo label{
+  font-size: 1.275rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.campo input, .campo textarea{
+  padding: 0.3rem;
+  font-size: 1rem;
+  border: 0;
+  border-bottom: 1px solid #63adcf;
+  /* adicionando uma borda solida só na parte de baixo */
+}
+
+button{
+  width: 50%;
+  padding: .5rem;
+  font-size: 1.250rem;
+  border-radius: .3rem;
+  border: 2px solid #63adcf ;
+  background: transparent;
+  transition: .2s;
+  opacity: 0.6;
+}
+
+button:hover{
+  background: #57aad1;
+}
+
+.mt-02{
+  margin-top: 2rem;
+}
+
+.sizemap{
+  width: 31.25rem;
+  height: 21.875rem;
+}
+
+.marginleft{
+  margin-left: 5rem;
+}

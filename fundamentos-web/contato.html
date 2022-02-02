@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+  <!-- Menu -->
+  <nav>
+    <ul class="menu">
+      <li>
+        <a href="index.html" class="links"> Home </a>
+      </li>
+  
+      <li>
+        <a href="contato.html" class="links">Contato</a>
+      </li>
+    </ul>
+  </nav>
+
+  <h1 class="center">Entre em contato comigo</h1>
+  
+  <div class="container mb-02">
+    <div>
+      <form>
+        <div class="campo">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" onkeyup="validaNome()">
+          <div id="txtNome" class="margin-top01"></div>
+        </div>
+
+        <div class="campo">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" onkeyup="validaEmail()">
+          <div id="txtEmail" class="margin-top01"></div>
+        </div>
+        
+        <div class="campo">
+          <label for="assunto">Assunto:</label>
+          <textarea name="assunto" id="assunto" rows="5" onkeyup="validaAssunto()"></textarea>
+          <div id="txtAssunto" class="margin-top01"></div>
+        </div>
+        
+        <button onclick="enviar()">Enviar</button>
+      </form>
+    </div>
+
+    <div class="marginleft">
+      <h2 class="mt-02">Endereço:</h2>
+
+      <p>R. João Guimarães Rosa, 233</p>
+      <p>Jardim Veloso, São Paulo - SP</p>
+
+      <iframe
+      class="sizemap"
+      src="https://www.google.com/maps/@-23.5602456,-46.807697,3a,75y,137.02h,92.55t/data=!3m7!1e1!3m5!1sjWyqFZE85PgkxkqGSIS-EA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DjWyqFZE85PgkxkqGSIS-EA%26cb_client%3Dmaps_sv.tactile.gps%26w%3D203%26h%3D100%26yaw%3D139.87555%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192"  
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy"
+      id="mapa"
+      onmousemove="mapaZoom()"
+      onmouseout="mapaNormal()">
+      </iframe>
+    </div>
+
+  </div>
+
+  <hr>
+
+<footer>
+  <div>
+    <a href="https://www.linkedin.com/in/samuel-da-silva-12322b225/" target = "_blank">
+      <img class="padding-01 tm-social" src="./assets/img/linkedin.png" alt="Logo do LinkedIn">
+    </a>
+    <a href="https://github.com/samuels-code" target = "_blank">
+      <img class="padding-01 tm-social" src="./assets/img/github.png" alt="Logo do GitHub">
+    </a>
+    </div>
+  
+  
+  <p class="center fs01">
+    Criado e estilizado por Samuel Silva &copy;
+  </p>
+
+</footer>
+
+<script src="./assets/js/script.js"></script>
+
+</body>
+</html>
